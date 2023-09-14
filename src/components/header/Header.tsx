@@ -10,7 +10,6 @@ import {
 import Image from "next/image";
 import { MobileMenu } from "./Navbar";
 import { FaChevronDown, FaSun, FaMoon, FaXmark } from "react-icons/fa6";
-import { CgMenuRightAlt } from "react-icons/cg";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
@@ -54,19 +53,23 @@ function useMenuAnimation(closeMenu: boolean) {
                 delay: closeMenu ? staggerMenuItems : 0,
             }
         );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [closeMenu]);
 
     return scope;
 }
 
-const DropdownMenu = ({ isOpen, setIsOpen, closeMenu, setCloseMenu }: ModalProps) => {
+const DropdownMenu = ({
+    isOpen,
+    setIsOpen,
+    closeMenu,
+    setCloseMenu,
+}: ModalProps) => {
     const ref = useRef(null);
     // const [closeMenu, setCloseMenu] = useState(false);
     const scope = useMenuAnimation(closeMenu);
 
     useEffect(() => {
-        
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ref]);
 
@@ -75,7 +78,7 @@ const DropdownMenu = ({ isOpen, setIsOpen, closeMenu, setCloseMenu }: ModalProps
             className={`
                     ${
                         isOpen
-                            ? " bg-black/60 backdrop-blur-sm z-40 inset-0 fixed w-full h-screen"
+                            ? " bg-black/60 backdrop-blur-sm z-40 inset-0 fixed w-full h-screen overflow-y-scroll overscroll-y-none"
                             : "-z-10"
                     }
                     px-4 
@@ -171,6 +174,19 @@ export default function Header() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     });
 
+    useEffect(() => {
+        const html = document.getElementsByTagName("html")[0];
+
+        if (isOpen) {
+            html.classList.add("lock-scroll");
+        } else {
+            html.classList.remove("lock-scroll");
+        }
+        return (): void => {
+            html.classList.remove("lock-scroll");
+        };
+    }, [isOpen]);
+
     return (
         <header
             className={`
@@ -230,7 +246,12 @@ export default function Header() {
                     </button>
                 </div>
             </div>
-            <DropdownMenu isOpen={isOpen} setIsOpen={setIsOpen} closeMenu={closeMenu} setCloseMenu={setCloseMenu} />
+            <DropdownMenu
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                closeMenu={closeMenu}
+                setCloseMenu={setCloseMenu}
+            />
         </header>
     );
 }

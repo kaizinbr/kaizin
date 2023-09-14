@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(../fonts/Fonts.module.css);
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
+    color: rgb(var(--foreground-rgb));
+    font-family: "Work Sans", sans-serif;
+
+    /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+}
+
+.space-grotesk {
+    font-family: "Space Grotesk", monospace, sans-serif;
+}
+
+.lock-scroll {
+    overflow: hidden;
+}
+
+.index::before {
+    content: "";
+    position: absolute;
+    right: 45%;
+    top: 130px;
+    width: calc(100% / 2);
+    height: 550px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    filter: blur(50px);
+    background-color: rgba(165, 180, 252, .3);
+    background-color: rgb(79 70 229 / 23%);
+    z-index: -1;
+}
+
+.index::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    filter: blur(50px);
+    background-color: rgba(99, 101, 241, .3);
+    background-color: rgb(99 102 241 / 23%);
+    z-index: -1;
 }
