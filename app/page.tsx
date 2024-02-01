@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SiAdobeillustrator, SiAdobephotoshop, SiCss3, SiExpress, SiFigma, SiHtml5, SiJavascript, SiMicrosoftoffice, SiNextdotjs, SiNodedotjs, SiPrisma, SiPython, SiReact, SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
 
 export default function Home() {
     return (
@@ -96,6 +97,7 @@ export default function Home() {
                 </div>
             </div>
 
+
             <div
                 className={`
                 w-full 
@@ -111,6 +113,15 @@ export default function Home() {
                     </h1>
                     <span className="">Minha introdução</span>
                 </div>
+                <picture>
+                    <Image
+                        src="/3.jpg"
+                        alt="Kaizin"
+                        width={512}
+                        height={512}
+                        className="rounded-md max-h-[432px] w-full object-cover"
+                    />
+                </picture>
                 <div className="flex flex-col gap-4">
                     <p className="text-xl">
                         Olá, meu nome é Kaio, mas pode me chamar de Kai. Sou um
@@ -128,15 +139,58 @@ export default function Home() {
                         desenvolvedor front-end.
                     </p>
                 </div>
-                <picture>
-                    <Image
-                        src="/3.jpg"
-                        alt="Kaizin"
-                        width={512}
-                        height={512}
-                        className="rounded-md max-h-[432px] w-full object-cover"
-                    />
-                </picture>
+            </div>
+
+            <div
+                className={`
+                w-full 
+                grid grid-cols-1 lg:grid-cols-2
+                gap-x-14
+                justify-start items-center
+                my-64 
+            `}
+            >
+                <div className="w-full col-span-1 lg:col-span-2 flex-1 flex flex-col items-center mb-24">
+                    <h1 id="skills" className="font-bold text-4xl eigerdals">
+                        Habilidades
+                    </h1>
+                    <span className="">Minha introdução</span>
+                </div>
+                <div className="flex flex-col gap-4">
+                    <p className="text-xl">
+                        Graças ao meu curso técnico em informática, tenho
+                        conhecimento em algumas linguagens de programação, como
+                        Python, JavaScript e TypeScript. Atualmente busco aprimorar meus conhecimentos em ReactJs,
+                        NextJs e TailwindCss.
+                    </p>
+                    <p className="text-xl">
+                        Quanto ao design, tenho conhecimento em softwares como
+                        Photoshop, Illustrator, Lightroom e InDesign, e atualmente estou
+                        buscando aprimorar minhas noçoes de estética e tipografia.
+                    </p>
+                    <p className="text-xl">
+                        Já sobre coisas menores que apenas gosto ou sei fazer, tenho
+                        conhecimento em softwares de edição de vídeo, pacote office
+                        e adoro escrever alguns textos sobre assuntos interessantes.
+                    </p>
+                </div>
+                <div className={`
+                    grid grid-cols-3 gap-x-4 gap-y-8
+                    
+                `}>
+                    <SiAdobeillustrator className="size-16 m-auto" />
+                    <SiAdobephotoshop className="size-16 m-auto" />
+                    <SiJavascript className="size-16 m-auto" />
+                    <SiHtml5 className="size-16 m-auto" />
+                    <SiCss3 className="size-16 m-auto" />
+                    <SiMicrosoftoffice className="size-16 m-auto" />
+                    <SiReact className="size-16 m-auto" />
+                    <SiNextdotjs className="size-16 m-auto" />
+                    <SiTailwindcss className="size-16 m-auto" />
+                    <SiPython className="size-16 m-auto" />
+                    <SiPrisma className="size-16 m-auto" />
+                    <SiFigma className="size-16 m-auto" />
+                </div>
             </div>
 
             <div
@@ -235,6 +289,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+
         </main>
     );
 }
