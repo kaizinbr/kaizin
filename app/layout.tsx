@@ -22,9 +22,9 @@ export default function RootLayout({
                 className={
                     openSans.className +
                 `
-                    bg-stone-200
-                    text-stone-900  
-                    mt-16          
+                    bg-neutral-900
+                    text-neutral-100  
+                           
                     flex justify-center items-start
                 `
                 }
@@ -35,8 +35,17 @@ export default function RootLayout({
                     bg-gradient-to-b from-[#C0B9DD] to-transparent
                 `}></div> */}
 
-                <Navbar />
+                {/* <Navbar /> */}
                 {children}
+                <div
+                aria-hidden="true"
+                className="absolute top-16 inset-0 grid grid-cols-2 -space-x-52 opacity-10 pointer-events-none"
+            >
+                <div className="fix-safari-blur blur-[106px] h-96 bg-gradient-to-br from-violet-500 to-purple-400 dark:from-fuchsia-700"></div>
+                <div className="fix-safari-blur blur-[106px] h-56 bg-gradient-to-r from-fuchsia-400 to-purple-300 dark:to-violet-600"></div>
+                {/* <div className="fix-safari-blur blur-[106px] h-56 bg-gradient-to-r from-teal-400 to-indigo-800 dark:to-violet-600"></div>
+                <div className="fix-safari-blur blur-[106px] h-56 bg-gradient-to-r from-green-500 to-rose-800 dark:to-violet-600"></div> */}
+            </div>
             </body>
         </html>
     );
