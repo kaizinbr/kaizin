@@ -75,68 +75,64 @@ export default function Navbar() {
     );
 
     return (
-        <div
+        <header
             className={`
             col-span-3 flex items-center justify-center
             z-40 
-            w-full sticky top-16
+            w-full h-20 fixed top-0
             transition-all duration-300
+            border-b backdrop-blur-xl
+            ${scroll ? "bg-white-seashell-50 border-[#e7e6e4] " : "bg-white-seashell border-transparent"}
 
         `}
         >
             <nav
                 className={`
                 m-auto w-full max-w-4xl h-full
-                flex flex-col items-start justify-start
+                flex flex-row items-start justify-between
+                px-8
                 
             `}
             >
-                {/* <div
-                    className={`
-                        grid grid-cols-[24px_minmax(60px,_1fr)_1px] 
-                        w-full
-                    `}
-                >
-                    <div className="w-6 h-full">
-                        <span
-                            className={`
-                                flex
-                            `}
-                        ></span>
-                    </div>
-                    <Link href="/" className="col-span-2 my-4">Kaizin</Link>
-                    <div className="w-6 flex justify-start items-center h-full">
-                        <span
-                            className={`
-                                flex
-                                size-2 rounded-full
-                                bg-blue-500
-                            `}
-                        ></span>
-                    </div>
-                    <Link href="/" className="col-span-2 my-4">Kaizin</Link>
-                    <div className="w-6 h-full">
-                        <span
-                            className={`
-                                flex
-                            `}
-                        ></span>
-                    </div>
-                    <Link href="/" className="col-span-2 my-4">Kaizin</Link>
-                    <div className="w-6 h-full">
-                        <span
-                            className={`
-                                flex
-                            `}
-                        ></span>
-                    </div>
-                    <Link href="/" className="col-span-2 my-4">Kaizin</Link>
-                </div> */}
 
-                <ul className="flex flex-col items-start justify-between">
+                <div className={`
+                    flex items-center justify-center
+                    h-full
+                    transition-all duration-300
+                    mielle-title text-4xl
+                `}>
+                    <Link href="/" className={`
+                        font-bold
+                    
+                    `}>
+                        kai<span className={`
+                            transition-all duration-300
+                            ${scroll ? "opacity-0" : "opacity-100"}
+                        `}>zin</span>
+                    </Link>
+                </div>
+
+                <div className={`
+                    flex flex-row gap-4
+                    h-full items-center
+                    gelica-menu
+                `}>
+                    <div className={``}>
+                        <Link href="/">portfolio</Link>
+                    </div>
+                    <div className={``}>
+                        <Link href="/skills">habilidades</Link>
+                    </div>
+                    <div className={``}>
+                        <Link href="/about">sobre</Link>
+                    </div>
+                </div>
+                
+
+                {/* <ul className="flex flex-col items-start justify-between">
                     {lis}
-                </ul>
+                </ul> */}
             </nav>
-        </div>
+        </header>
     );
 }

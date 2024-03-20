@@ -1,22 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://use.typekit.net/oue7veo.css");
 @font-face {
     font-family: "Eigerdals W00 Black";
     src: url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.eot");
-    src: url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.svg#Eigerdals W00 Black")format("svg");
+    src: url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.woff2")
+            format("woff2"),
+        url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.woff")
+            format("woff"),
+        url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.ttf")
+            format("truetype"),
+        url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.svg#Eigerdals W00 Black")
+            format("svg");
 }
 
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
 
+:root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    /* laranja */
+    --outrageous-orange-50: #fff3ed;
+    --outrageous-orange-100: #ffe2d4;
+    --outrageous-orange-200: #ffc2a9;
+    --outrageous-orange-300: #ff9772;
+    --outrageous-orange-400: #fe552a;
+    --outrageous-orange-500: #fd3812;
+    --outrageous-orange-600: #ee1e08;
+    --outrageous-orange-700: #c51109;
+    --outrageous-orange-800: #9c1010;
+    --outrageous-orange-900: #7e1110;
+    --outrageous-orange-950: #440608;
+
+    /* violet */
+    --mortar-50: #f6f6f8;
+    --mortar-100: #ebeaef;
+    --mortar-200: #dcdae3;
+    --mortar-300: #c3c0d0;
+    --mortar-400: #a7a2b8;
+    --mortar-500: #948ba6;
+    --mortar-600: #847a96;
+    --mortar-700: #796d88;
+    --mortar-800: #655c71;
+    --mortar-900: #4b4553;
+    --mortar-950: #35313a;
+
+    /* blue */
+    --antique-brass-50: #faf5f2;
+    --antique-brass-100: #f4e9e0;
+    --antique-brass-200: #e9d1bf;
+    --antique-brass-300: #dbb296;
+    --antique-brass-400: #cb8e6c;
+    --antique-brass-500: #c47b5a;
+    --antique-brass-600: #b25f44;
+    --antique-brass-700: #944b3a;
+    --antique-brass-800: #783e34;
+    --antique-brass-900: #61352d;
+    --antique-brass-950: #341a16;
+
+    --bg-seashell-rgb: 251, 243, 240;
+}
 
 @layer utilities {
     .text-balance {
@@ -29,7 +76,309 @@ body {
     color: rgba(var(--foreground-rgb), 1);
 }
 
+.mielle-title {
+    font-family: "mielle-cf", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.gelica-menu {
+    font-family: "gelica", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.gelica {
+    font-family: "gelica", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .eigerdals {
     font-family: "Eigerdals W00 Black";
+}
+
+.bg-outrageous-orange-50 {
+    background-color: var(--outrageous-orange-50);
+}
+
+.bg-outrageous-orange-100 {
+    background-color: var(--outrageous-orange-100);
+}
+
+.bg-outrageous-orange-200 {
+    background-color: var(--outrageous-orange-200);
+}
+
+.bg-outrageous-orange-300 {
+    background-color: var(--outrageous-orange-300);
+}
+
+.bg-outrageous-orange-400 {
+    background-color: var(--outrageous-orange-400);
+}
+
+.bg-outrageous-orange-500 {
+    background-color: var(--outrageous-orange-500);
+}
+
+.bg-outrageous-orange-600 {
+    background-color: var(--outrageous-orange-600);
+}
+
+.bg-outrageous-orange-700 {
+    background-color: var(--outrageous-orange-700);
+}
+
+.bg-outrageous-orange-800 {
+    background-color: var(--outrageous-orange-800);
+}
+
+.bg-outrageous-orange-900 {
+    background-color: var(--outrageous-orange-900);
+}
+
+.bg-outrageous-orange-950 {
+    background-color: var(--outrageous-orange-950);
+}
+
+.bg-mortar-50 {
+    background-color: var(--mortar-50);
+}
+
+.bg-mortar-100 {
+    background-color: var(--mortar-100);
+}
+
+.bg-mortar-200 {
+    background-color: var(--mortar-200);
+}
+
+.bg-mortar-300 {
+    background-color: var(--mortar-300);
+}
+
+.bg-mortar-400 {
+    background-color: var(--mortar-400);
+}
+
+.bg-mortar-500 {
+    background-color: var(--mortar-500);
+}
+
+.bg-mortar-600 {
+    background-color: var(--mortar-600);
+}
+
+.bg-mortar-700 {
+    background-color: var(--mortar-700);
+}
+
+.bg-mortar-800 {
+    background-color: var(--mortar-800);
+}
+
+.bg-mortar-900 {
+    background-color: var(--mortar-900);
+}
+
+.bg-mortar-950 {
+    background-color: var(--mortar-950);
+}
+
+.bg-antique-brass-50 {
+    background-color: var(--antique-brass-50);
+}
+
+.bg-antique-brass-100 {
+    background-color: var(--antique-brass-100);
+}
+
+.bg-antique-brass-200 {
+    background-color: var(--antique-brass-200);
+}
+
+.bg-antique-brass-300 {
+    background-color: var(--antique-brass-300);
+}
+
+.bg-antique-brass-400 {
+    background-color: var(--antique-brass-400);
+}
+
+.bg-antique-brass-500 {
+    background-color: var(--antique-brass-500);
+}
+
+.bg-antique-brass-600 {
+    background-color: var(--antique-brass-600);
+}
+
+.bg-antique-brass-700 {
+    background-color: var(--antique-brass-700);
+}
+
+.bg-antique-brass-800 {
+    background-color: var(--antique-brass-800);
+}
+
+.bg-antique-brass-900 {
+    background-color: var(--antique-brass-900);
+}
+
+.bg-antique-brass-950 {
+    background-color: var(--antique-brass-950);
+}
+
+.bg-white-seashell {
+    background-color: rgb(var(--bg-seashell-rgb));
+}
+
+.bg-white-seashell-50 {
+    background-color: rgba(var(--bg-seashell-rgb), 0.7);
+    
+}
+
+.bg-gradient-to-tl {
+    background-image: linear-gradient(
+        to top left,
+        rgba(var(--foreground-rgb), 0.1) 0%,
+        rgba(var(--background-end-rgb), 1) 100%
+    );
+}
+
+.text-mortar-50 {
+    color: var(--mortar-50);
+}
+
+.text-mortar-100 {
+    color: var(--mortar-100);
+}
+
+.text-mortar-200 {
+    color: var(--mortar-200);
+}
+
+.text-mortar-300 {
+    color: var(--mortar-300);
+}
+
+.text-mortar-400 {
+    color: var(--mortar-400);
+}
+
+.text-mortar-500 {
+    color: var(--mortar-500);
+}
+
+.text-mortar-600 {
+    color: var(--mortar-600);
+}
+
+.text-mortar-700 {
+    color: var(--mortar-700);
+}
+
+.text-mortar-800 {
+    color: var(--mortar-800);
+}
+
+.text-mortar-900 {
+    color: var(--mortar-900);
+}
+
+.text-mortar-950 {
+    color: var(--mortar-950);
+}
+
+.text-antique-brass-50 {
+    color: var(--antique-brass-50);
+}
+
+.text-antique-brass-100 {
+    color: var(--antique-brass-100);
+}
+
+.text-antique-brass-200 {
+    color: var(--antique-brass-200);
+}
+
+.text-antique-brass-300 {
+    color: var(--antique-brass-300);
+}
+
+.text-antique-brass-400 {
+    color: var(--antique-brass-400);
+}
+
+.text-antique-brass-500 {
+    color: var(--antique-brass-500);
+}
+
+.text-antique-brass-600 {
+    color: var(--antique-brass-600);
+}
+
+.text-antique-brass-700 {
+    color: var(--antique-brass-700);
+}
+
+.text-antique-brass-800 {
+    color: var(--antique-brass-800);
+}
+
+.text-antique-brass-900 {
+    color: var(--antique-brass-900);
+}
+
+.text-antique-brass-950 {
+    color: var(--antique-brass-950);
+}
+
+.text-white-seashell {
+    color: var(--bg-white);
+}
+
+.text-outrageous-orange-50 {
+    color: var(--outrageous-orange-50);
+}
+
+.text-outrageous-orange-100 {
+    color: var(--outrageous-orange-100);
+}
+
+.text-outrageous-orange-200 {
+    color: var(--outrageous-orange-200);
+}
+
+.text-outrageous-orange-300 {
+    color: var(--outrageous-orange-300);
+}
+
+.text-outrageous-orange-400 {
+    color: var(--outrageous-orange-400);
+}
+
+.text-outrageous-orange-500 {
+    color: var(--outrageous-orange-500);
+}
+
+.text-outrageous-orange-600 {
+    color: var(--outrageous-orange-600);
+}
+
+.text-outrageous-orange-700 {
+    color: var(--outrageous-orange-700);
+}
+
+.text-outrageous-orange-800 {
+    color: var(--outrageous-orange-800);
+}
+
+.text-outrageous-orange-900 {
+    color: var(--outrageous-orange-900);
+}
+
+.text-outrageous-orange-950 {
+    color: var(--outrageous-orange-950);
 }
