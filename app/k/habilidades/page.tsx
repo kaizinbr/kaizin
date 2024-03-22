@@ -10,7 +10,7 @@ export default function Sobre() {
                         text-4xl font-bold mb-6
                     `}
                 >
-                    Algumas habilidades
+                    algumas habilidades
                 </h1>
                 {/* <p className="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis omnis saepe dicta labore possimus in. Deleniti aliquam voluptatibus debitis fuga nulla adipisci officiis consequuntur, neque necessitatibus non aperiam doloribus.</p> */}
                 <div

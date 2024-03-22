@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 
 import { motion, AnimatePresence } from "framer-motion";
 
-
 export default function Navbar() {
     const [scroll, setScroll] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +24,8 @@ export default function Navbar() {
 
     useEffect(() => {
         if (isOpen) {
-            document.body.style.overflow = 'hidden';
-        } else document.body.style.overflow = 'scroll';
+            document.body.style.overflow = "hidden";
+        } else document.body.style.overflow = "scroll";
         return () => {};
     }, [isOpen]);
 
@@ -111,11 +110,11 @@ export default function Navbar() {
         <>
             <header
                 className={`
-            col-span-3 flex items-center justify-center
-            z-50 
-            w-full h-20 fixed top-0
-            transition-all duration-300
-            border-b backdrop-blur-xl
+                    col-span-3 flex items-center justify-center
+                    z-50 
+                    w-full h-20 fixed top-0
+                    transition-all duration-300
+                    border-b backdrop-blur-xl
             ${
                 scroll
                     ? "bg-white-seashell-50 border-[#e7e6e4] "
@@ -126,11 +125,11 @@ export default function Navbar() {
             >
                 <nav
                     className={`
-                m-auto w-full max-w-4xl h-full
-                flex flex-row wrap items-start justify-between
-                px-6 py-3 md:py-0 md:px-8
-                
-            `}
+                        m-auto w-full max-w-4xl h-full
+                        flex flex-row wrap items-start justify-between
+                        px-6 py-3 md:py-0 md:px-8
+                                
+                    `}
                 >
                     <div
                         className={`
@@ -170,10 +169,10 @@ export default function Navbar() {
                             <Link href="/">portfolio</Link>
                         </div>
                         <div className={``}>
-                            <Link href="/skills">habilidades</Link>
+                            <Link href="/habilidades">habilidades</Link>
                         </div>
                         <div className={``}>
-                            <Link href="/about">sobre</Link>
+                            <Link href="/sobre">sobre</Link>
                         </div>
                     </div>
 
@@ -192,11 +191,12 @@ export default function Navbar() {
                                 setIsOpen(!isOpen);
                                 console.log("is open", isOpen);
                             }}
-                            
                         >
-
-                            {isOpen ? <HiX className={` size-8`} /> : <HiMenuAlt4 className={` size-8`} />}
-
+                            {isOpen ? (
+                                <HiX className={` size-8`} />
+                            ) : (
+                                <HiMenuAlt4 className={` size-8`} />
+                            )}
                         </button>
                     </div>
 
@@ -219,7 +219,7 @@ export default function Navbar() {
                     z-40
                 `}
                     >
-                       <div
+                        <div
                             className={`
                                     absolute top-20 left-0 right-0
                                     h-[calc(100%-5rem)]
@@ -235,13 +235,34 @@ export default function Navbar() {
                                 `}
                             >
                                 <div className={`text-4xl`}>
-                                    <Link href="/">portfólio</Link>
+                                    <Link
+                                        href="/"
+                                        onClick={() => {
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        portfólio
+                                    </Link>
                                 </div>
                                 <div className={`text-4xl`}>
-                                    <Link href="/skills">habilidades</Link>
+                                    <Link
+                                        href="/habilidades"
+                                        onClick={() => {
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        habilidades
+                                    </Link>
                                 </div>
                                 <div className={`text-4xl`}>
-                                    <Link href="/about">sobre</Link>
+                                    <Link
+                                        href="/sobre"
+                                        onClick={() => {
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        sobre
+                                    </Link>
                                 </div>
 
                                 <div className="flex flex-row items-center justify-start mt-10 gap-3">

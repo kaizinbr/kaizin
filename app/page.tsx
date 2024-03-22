@@ -27,23 +27,30 @@ export default function Home() {
             className={`
             flex flex-col gap-6 
             py-4
-            m-auto max-w-6xl w-full min-h-screen h-[200vh]
+            m-auto max-w-6xl w-full min-h-screen
             md:px-12 px-6
         `}
         >
-
-            <div className={`
+            <div
+                className={`
                     min-h-[calc(60vh-48px)] text-center px-6 md:px-16 mt-12 mb-28 text-3xl gelica text-pretty
                     flex items-center
-                `}>
-                <p className={`
+                `}
+            >
+                <p
+                    className={`
                     
-                `}>
-                    Trilhando novos <span className="text-[#C47B5A]">caminhos{" "}</span> através de linhas de <span className="text-[#4B4553]">código{""}</span>, ótimas
-                    paletas e muita <span className="text-[#FE552A]">criatividade</span>. Perfeito para conversar sobre
-                    músicas, livros e boas tipografias.
+                `}
+                >
+                    Trilhando novos{" "}
+                    <span className="text-[#C47B5A]">caminhos </span> através de
+                    linhas de <span className="text-[#4B4553]">código{""}</span>
+                    , ótimas paletas e muita{" "}
+                    <span className="text-[#FE552A]">criatividade</span>.
+                    Perfeito para conversar sobre músicas, livros e boas
+                    tipografias.
                 </p>
-            </div>          
+            </div>
 
             <div className="flex flex-col col-span-full gap-4">
                 <h1
@@ -54,11 +61,28 @@ export default function Home() {
                     agora alguns projetos
                 </h1>
 
-                <div className={`
-                    grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24
-                `}>
-                    <ProjectCard />
-                    <ProjectCard />
+                <div
+                    className={`
+                    grid grid-cols-1 md:grid-cols-2 
+                `}
+                // gap-12 md:gap-24
+                >
+                    {/* <ProjectCard />
+                    <ProjectCard /> */}
+                    <p className="text-xl gelica col-span-2 text-center">
+                        Opa, ainda não tá pronto...
+                    </p>
+                    <p className="text-xl gelica col-span-2 text-center mb-12">
+                        Que tal dar uma olhada nas páginas{" "}
+                        <Link href="/habilidades" className="underline">
+                            Habilidades
+                        </Link>{" "}
+                        ou{" "}
+                        <Link href="/sobre" className="underline">
+                            Sobre
+                        </Link>
+                        ?
+                    </p>
                     {/* <div className={`
                         mb-4
                     `}>
