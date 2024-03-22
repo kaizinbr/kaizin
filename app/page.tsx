@@ -28,12 +28,12 @@ export default function Home() {
             flex flex-col gap-6 
             py-4
             m-auto max-w-6xl w-full min-h-screen h-[200vh]
-            px-12
+            md:px-12 px-6
         `}
         >
 
             <div className={`
-                     min-h-[calc(60vh-48px)] text-center px-16 mt-12 mb-28 text-3xl gelica text-pretty
+                    min-h-[calc(60vh-48px)] text-center px-6 md:px-16 mt-12 mb-28 text-3xl gelica text-pretty
                     flex items-center
                 `}>
                 <p className={`
@@ -55,7 +55,7 @@ export default function Home() {
                 </h1>
 
                 <div className={`
-                    grid grid-cols-2 gap-24
+                    grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24
                 `}>
                     <ProjectCard />
                     <ProjectCard />

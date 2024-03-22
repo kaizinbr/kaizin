@@ -6,12 +6,14 @@ export default function Footer() {
         <footer
             className={`
             w-full
-            flex flex-row justify-between items-start
+            flex flex-col md:flex-row 
+            
+            justify-between items-start
             border-t border-neutral-200
-            p-12
+            py-12 md:px-12 px-6
         `}
         >
-            <div className="flex flex-col w-1/3">
+            <div className="flex flex-col w-full md:w-1/3 mb-5">
                 <p
                     className={`
                     text-2xl gelica mb-5
@@ -36,7 +38,7 @@ export default function Footer() {
                     Atualmente meu foco é em desenvolvimento front end, no estudo de UI e Web Design no geral, mas estou sempre disposto a aprender e me aventurar em novas áreas. Qualquer que seja a proposta, ficarei feliz em dar uma olhada!
                 </p>
             </div>
-            <div className="flex flex-row items-center justify-end w-2/5 gap-3">
+            <div className="flex flex-row items-center justify-start md:justify-end w-full md:w-2/5 gap-3">
                 <HiOutlineMail className="size-6" />
                 <FaBehance className="size-6" />
                 <FaInstagram className="size-5" />
