@@ -3,33 +3,33 @@ import Link from "next/link";
 
 export default function Habilidades() {
     return (
-        <main className="w-full">
+        <main className="w-full lg:max-w-screen-lg m-auto">
             <div
                 className={`
                 flex flex-col md:flex-row md:gap-12
                 py-4 w-full items-start justify-between
-                md:px-12 px-6
+                md:px-12 lg:px-0 px-6
             `}
             >
                 <picture
-                    className={`w-full md:w-2/5`}
+                    className={`md:w-2/4`}
                     >
                     <Image
                         src="/3.jpg"
                         alt="Habilidades"
-                        width={664}
-                        height={1080}
-                        className="object-contain mb-6  max-w-[664px] w-full md:h-auto"
+                        width={500}
+                        height={800}
+                        className="object-contain mb-6  max-w-[500px] w-full md:h-auto"
                     />
                 </picture>
-                <div className="texto flex flex-col w-full md:w-3/5">
+                <div className="texto flex flex-col w-full md:w-2/4">
                     <h1 className={`text-5xl text-start gelica mb-6`}>
                         se você veio até aqui, me chame de Kai.
                     </h1>
                     <p className={`text-pretty mb-6`}>
                         Se quiser saber mais sobre minhas habilidades, é nessa
                         página{" "}
-                        <Link href="/sobre" className={`underline`}>
+                        <Link href="/habilidades" className={`underline`}>
                             aqui
                         </Link>
                         !
@@ -78,4 +78,5 @@ export default function Habilidades() {
             </div>
         </main>
     );
+    
 }

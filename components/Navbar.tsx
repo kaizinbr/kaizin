@@ -25,7 +25,7 @@ export default function Navbar() {
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = "hidden";
-        } else document.body.style.overflow = "scroll";
+        } else document.body.style.overflowY = "scroll";
         return () => {};
     }, [isOpen]);
 
@@ -166,7 +166,7 @@ export default function Navbar() {
                     `}
                     >
                         <div className={``}>
-                            <Link href="/">portfolio</Link>
+                            <Link href="/">portfólio</Link>
                         </div>
                         <div className={``}>
                             <Link href="/habilidades">habilidades</Link>
@@ -199,10 +199,6 @@ export default function Navbar() {
                             )}
                         </button>
                     </div>
-
-                    {/* <ul className="flex flex-col items-start justify-between">
-                    {lis}
-                </ul> */}
                 </nav>
             </header>
 
@@ -266,9 +262,15 @@ export default function Navbar() {
                                 </div>
 
                                 <div className="flex flex-row items-center justify-start mt-10 gap-3">
+                                <Link href="mailto:kaiolucas1812@gmail.com" target="_blank">
                                     <HiOutlineMail className="size-6" />
+                                </Link>
+                                <Link href="https://www.behance.net/kaizin" target="_blank">
                                     <FaBehance className="size-6" />
+                                </Link>
+                                <Link href="https://www.instagram.com/05kaizin" target="_blank">
                                     <FaInstagram className="size-5" />
+                                </Link>
                                 </div>
                             </div>
                         </div>

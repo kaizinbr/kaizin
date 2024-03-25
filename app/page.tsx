@@ -27,8 +27,8 @@ export default function Home() {
             className={`
             flex flex-col gap-6 
             py-4
-            m-auto max-w-6xl w-full min-h-screen
-            md:px-12 px-6
+            m-auto max-w-screen-lg w-full min-h-screen
+            md:px-12 lg:px-0 px-6
         `}
         >
             <div
@@ -64,134 +64,225 @@ export default function Home() {
                 <div
                     className={`
                     grid grid-cols-1 md:grid-cols-2 
+                    gap-12 md:gap-24
                 `}
-                // gap-12 md:gap-24
+                    // gap-12 md:gap-24
                 >
-                    {/* <ProjectCard />
-                    <ProjectCard /> */}
-                    <p className="text-xl gelica col-span-2 text-center">
-                        Opa, ainda não tá pronto...
-                    </p>
-                    <p className="text-xl gelica col-span-2 text-center mb-12">
-                        Que tal dar uma olhada nas páginas{" "}
-                        <Link href="/habilidades" className="underline">
-                            Habilidades
-                        </Link>{" "}
-                        ou{" "}
-                        <Link href="/sobre" className="underline">
-                            Sobre
-                        </Link>
-                        ?
-                    </p>
-                    {/* <div className={`
-                        mb-4
-                    `}>
-                        <Link 
-                            href="/k/projetos/kaizin"
+                    <div
+                        className={`
+
+                    `}
+                    >
+                        <Link
+                            href="/projetos/xisbank"
                             className={`
-                                flex justify-start items-center
-                                hover:text-neutral-200 hover:underline
+                                flex flex-col justify-start items-center
+                                hover:text-neutral-800 hover:underline
                                 transition duration-200
-                                mb-3 w-fit
+                                w-fit group
                             `}
                         >
+                            <Image
+                                src="/xisbank.png"
+                                alt="print"
+                                width={800}
+                                height={450}
+                                className={`
+                                    rounded-xl w-full
+                                    group-hover:opacity-85
+                                    transition duration-200
+                                `}
+                            />
                             <h2
                                 className={`
-                                    text-2xl font-bold mr-3
+                                    text-2xl font-bold mt-4 mb-2
                                 `}
                             >
-                                Kaizin
+                                xisbank
                             </h2>
-                                <FiExternalLink className="size-4"/>
                         </Link>
-                        <p>
-                            Site pessoal
-                        </p>
-
                     </div>
-                    <div className={`
-                        mb-4
-                    `}>
-                        <Link 
-                            href="https://instakai.vercel.app"
+
+
+                    
+                    <div
+                        className={`
+
+                    `}
+                    >
+                        <Link
+                            href="https://www.behance.net/gallery/187066273/SouDigital-Identidade-Visual"
                             target="_blank"
                             className={`
-                                flex justify-start items-center
-                                hover:text-neutral-200 hover:underline
+                                flex flex-col justify-start items-center
+                                hover:text-neutral-800 hover:underline
                                 transition duration-200
-                                mb-3 w-fit
+                                w-fit group
                             `}
                         >
+                            <Image
+                                src="/sd.png"
+                                alt="print"
+                                width={800}
+                                height={450}
+                                className={`
+                                    rounded-xl w-full
+                                    group-hover:opacity-85
+                                    transition duration-200
+                                `}
+                            />
                             <h2
                                 className={`
-                                    text-2xl font-bold mr-3
+                                    text-2xl font-bold mt-4 mb-2
                                 `}
                             >
-                                Instaclone
+                                Identidade Visual SouDigital
                             </h2>
-                                <FiExternalLink className="size-4"/>
                         </Link>
-                        <p>
-                            Um clone simples do Instagram feito em React e Next. 
-                            Fiz para expor alguns posts que faço como designer freelancer.
-                        </p>
-
                     </div>
-                    <div className={`
-                        mb-4
-                    `}>
-                        <Link 
-                            href="https://xisbank.vercel.app"
+                    <div
+                        className={`
+
+                    `}
+                    >
+                        <Link
+                            href="https://www.behance.net/gallery/181561229/Cartaz-tipografico-Marilia-Mendonca"
                             target="_blank"
                             className={`
-                                flex justify-start items-center
-                                hover:text-neutral-200 hover:underline
+                                flex flex-col justify-start items-center
+                                hover:text-neutral-800 hover:underline
                                 transition duration-200
-                                mb-3 w-fit
+                                w-fit group
                             `}
                         >
+                            <Image
+                                src="/marilia.png"
+                                alt="print"
+                                width={800}
+                                height={450}
+                                className={`
+                                    rounded-xl w-full
+                                    group-hover:opacity-85
+                                    transition duration-200
+                                `}
+                            />
                             <h2
                                 className={`
-                                    text-2xl font-bold mr-3
+                                    text-2xl font-bold mt-4 mb-2
                                 `}
                             >
-                                xis Bank
+                                Cartaz tipográfico Marília Mendonça
                             </h2>
-                                <FiExternalLink className="size-4"/>
                         </Link>
-                        <p>
-                            Uma landing page de um banco fictício.
-
-                        </p>
-
                     </div>
-                    <div className={`
-                        mb-4
-                    `}>
-                        <Link 
-                            href="https://lyricard-gen.vercel.app/"
+                    <div
+                        className={`
+
+                    `}
+                    >
+                        <Link
+                            href="https://www.behance.net/gallery/180723801/Drip-Coffee-KAFFA"
                             target="_blank"
                             className={`
-                                flex justify-start items-center
-                                hover:text-neutral-200 hover:underline
+                                flex flex-col justify-start items-center
+                                hover:text-neutral-800 hover:underline
                                 transition duration-200
-                                mb-3 w-fit
+                                w-fit group
                             `}
                         >
+                            <Image
+                                src="/kaffa.png"
+                                alt="print"
+                                width={800}
+                                height={450}
+                                className={`
+                                    rounded-xl w-full
+                                    group-hover:opacity-85
+                                    transition duration-200
+                                `}
+                            />
                             <h2
                                 className={`
-                                    text-2xl font-bold mr-3
+                                    text-2xl font-bold mt-4 mb-2
+                                `}
+                            >
+                                Embalagem Drip Coffee KAFFA
+                            </h2>
+                        </Link>
+                    </div>
+
+                    <div
+                        className={`
+
+                    `}
+                    >
+                        <Link
+                            href="/projetos/lyricard"
+                            className={`
+                                flex flex-col justify-start items-center
+                                hover:text-neutral-800 hover:underline
+                                transition duration-200
+                                w-fit group
+                            `}
+                        >
+                            <Image
+                                src="/lyricardmain.png"
+                                alt="print"
+                                width={800}
+                                height={450}
+                                className={`
+                                    rounded-xl w-full
+                                    group-hover:opacity-85
+                                    transition duration-200
+                                `}
+                            />
+                            <h2
+                                className={`
+                                    text-2xl font-bold mt-4 mb-2
                                 `}
                             >
                                 Lyricard Generator
                             </h2>
-                                <FiExternalLink className="size-4"/>
                         </Link>
-                        <p>
-                            Um <abbr title="É ironia!"><i>fazedor</i></abbr> de cards de letras do spotify.
-                        </p>
+                        {/* <p>Site pessoal</p>
+                    <FiExternalLink className="size-4" /> */}
+                    </div>
+                    <div
+                        className={`
 
-                    </div> */}
+                    `}
+                    >
+                        <Link
+                            href="/projetos/instakai"
+                            className={`
+                                flex flex-col justify-start items-center
+                                hover:text-neutral-800 hover:underline
+                                transition duration-200
+                                w-fit group
+                            `}
+                        >
+                            <Image
+                                src="/instakai.png"
+                                alt="print"
+                                width={800}
+                                height={450}
+                                className={`
+                                    rounded-xl w-full
+                                    group-hover:opacity-85
+                                    transition duration-200
+                                `}
+                            />
+                            <h2
+                                className={`
+                                    text-2xl font-bold mt-4 mb-2
+                                `}
+                            >
+                                Instagram Clone
+                            </h2>
+                        </Link>
+                        {/* <p>Site pessoal</p>
+                    <FiExternalLink className="size-4" /> */}
+                    </div>
                 </div>
             </div>
         </main>

@@ -94,6 +94,12 @@ body {
     font-style: normal;
 }
 
+.gelica-title {
+    font-family: "gelica", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .eigerdals {
     font-family: "Eigerdals W00 Black";
 }

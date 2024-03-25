@@ -10,7 +10,7 @@ export default function ProjectCard() {
                     `}
         >
             <Link
-                href="/k/projetos/kaizin"
+                href="/projetos/kaizin"
                 className={`
                     flex flex-col justify-start items-center
                     hover:text-neutral-800 hover:underline
