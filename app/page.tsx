@@ -1,25 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiExternalLink } from "react-icons/fi";
-import {
-    SiAdobeillustrator,
-    SiAdobephotoshop,
-    SiCss3,
-    SiExpress,
-    SiFigma,
-    SiHtml5,
-    SiJavascript,
-    SiMicrosoftoffice,
-    SiNextdotjs,
-    SiNodedotjs,
-    SiPrisma,
-    SiPython,
-    SiReact,
-    SiTailwindcss,
-    SiVisualstudiocode,
-} from "react-icons/si";
-
-import ProjectCard from "@/components/cards/ProjectCard";
 
 export default function Home() {
     return (
