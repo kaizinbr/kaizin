@@ -15,9 +15,9 @@ export default function Habilidades() {
                     className={`md:w-2/4`}
                     >
                     <Image
-                        src="/3.jpg"
+                        src="/site-banner.png"
                         alt="Habilidades"
-                        width={500}
+                        width={600}
                         height={800}
                         className="object-contain mb-6  max-w-[500px] w-full md:h-auto"
                     />
