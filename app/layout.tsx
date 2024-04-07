@@ -17,6 +17,33 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Kaizin",
     description: "Portfólio de Kaio Lucas, desenvolvedor front end e designer.",	
+    openGraph: {
+        type: "website",
+        locale: "pt_BR",
+        url: "https://kaizin.vercel.app",
+        siteName: "Kaizin",
+        title: "Kaizin",
+        description: "Portfólio de Kaio Lucas, desenvolvedor front end e designer.",
+        images: [
+            {
+                url: "https://kaizin.vercel.app/site-banner.png",
+                width: 800,
+                height: 600,
+                alt: "Kaizin",
+            },
+        ],
+    },
+    twitter: {
+        site: "@kaizindev",
+        images: [
+            {
+                url: "https://kaizin.vercel.app/site-banner.png",
+                width: 800,
+                height: 600,
+                alt: "Kaizin",
+            },
+        ],
+    },
 
 };
 
