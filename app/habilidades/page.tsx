@@ -14,7 +14,7 @@ export default function Habilidades() {
             >
                 <div className="md:col-span-12">
                     <h1 className={`text-5xl text-start gelica mb-6`}>
-                        Aqui estão algumas habilidades
+                        aqui estão algumas habilidades
                     </h1>
                     <p className={`text-pretty mb-6`}>
                         Como explico melhor na página{" "}

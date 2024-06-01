@@ -1,5 +1,5 @@
-import { HiOutlineMail,  } from "react-icons/hi";
-import { FaInstagram,FaBehance } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaInstagram, FaBehance, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -29,7 +29,9 @@ export default function Footer() {
                         text-pretty
                     `}
                     >
-                        Se você gostou do meu trabalho e quer falar sobre algum projeto, ideia ou tem alguma crítica, fique à vontade para entrar em contato comigo.
+                        Se você gostou do meu trabalho e quer falar sobre algum
+                        projeto, ideia ou tem alguma crítica, fique à vontade
+                        para entrar em contato comigo.
                     </p>
                     <p
                         className={`
@@ -37,7 +39,11 @@ export default function Footer() {
                         text-pretty
                     `}
                     >
-                        Atualmente meu foco é em desenvolvimento front end, no estudo de UI e Web Design no geral, mas estou sempre disposto a aprender e me aventurar em novas áreas. Qualquer que seja a proposta, ficarei feliz em dar uma olhada!
+                        Atualmente meu foco é em desenvolvimento front end, no
+                        estudo de UI e Web Design no geral, mas estou sempre
+                        disposto a aprender e me aventurar em novas áreas.
+                        Qualquer que seja a proposta, ficarei feliz em dar uma
+                        olhada!
                     </p>
                 </div>
                 <div className="flex flex-row items-center justify-start md:justify-end w-full md:w-2/5 gap-3">
@@ -47,9 +53,19 @@ export default function Footer() {
                     <Link href="https://www.behance.net/kaizin" target="_blank">
                         <FaBehance className="size-6" />
                     </Link>
-                    <Link href="https://www.instagram.com/05kaizin" target="_blank">
+                    <Link
+                        href="https://www.instagram.com/05kaizin"
+                        target="_blank"
+                    >
                         <FaInstagram className="size-5" />
                     </Link>
+                    <Link
+                        href="https://github.com/kaizinbr"
+                        target="_blank"
+                    >
+                        <FaGithub className="size-5" />
+                    </Link>
+
                 </div>
             </div>
         </footer>
