@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
+import SmoothWrapper from "@/components/SmoothWrapper";
 
 // Font files can be colocated inside of `app`
 const myFont = localFont({
@@ -74,9 +75,11 @@ export default function RootLayout({
                 `
                 }
             >
-                <Navbar />
-                {children}
-                <Footer />
+                <SmoothWrapper>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                </SmoothWrapper>
             </body>
         </html>
     );

@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "framer-motion": "^11.0.3",
+    "lenis": "^1.1.2",
     "lucide": "^0.381.0",
     "million": "^3.0.2",
-    "next": "^14.2.3",
+    "next": "^14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "resize-observer-polyfill": "^1.5.1",
+    "sass": "^1.77.4"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -25,6 +28,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
+    "prettier": "^3.3.1",
+    "prettier-plugin-tailwindcss": "^0.6.2",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

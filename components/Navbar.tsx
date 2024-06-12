@@ -114,7 +114,7 @@ export default function Navbar() {
                     z-50 
                     w-full h-20 fixed top-0
                     transition-all duration-300
-                    border-b backdrop-blur-xl
+                    border-b backdrop-blur-3xl
             ${
                 scroll
                     ? "bg-white-seashell-50 border-[#e7e6e4] "
@@ -166,7 +166,7 @@ export default function Navbar() {
                     `}
                     >
                         <div className={``}>
-                            <Link href="/">portfólio</Link>
+                            <Link href="/">projetos</Link>
                         </div>
                         <div className={``}>
                             <Link href="/habilidades">habilidades</Link>
@@ -219,7 +219,7 @@ export default function Navbar() {
                             className={`
                                     absolute top-20 left-0 right-0
                                     h-[calc(100%-5rem)]
-                                    flex backdrop-blur-lg bg-white-seashell-50
+                                    flex backdrop-blur-3xl bg-white-seashell-50
                                 `}
                         >
                             <div
@@ -237,7 +237,7 @@ export default function Navbar() {
                                             setIsOpen(false);
                                         }}
                                     >
-                                        portfólio
+                                        projetos
                                     </Link>
                                 </div>
                                 <div className={`text-4xl`}>
