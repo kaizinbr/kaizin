@@ -135,7 +135,7 @@ function Item({ imageUrl, linkPath, chips }: { imageUrl: string; linkPath: strin
 export default function ContainerCards({ props }: { props?: any }) {
     return (
         <div
-            className={`relative flex w-full flex-col  py-4 md:grid md:grid-cols-12 md:px-12 lg:px-0 ${props} `}
+            className={`relative flex w-full flex-col  py-4 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24 ${props} `}
         >
             {cards.map((card, index) => (
                 <Item
