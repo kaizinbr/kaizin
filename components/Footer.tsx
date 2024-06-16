@@ -1,14 +1,15 @@
 import { HiOutlineMail } from "react-icons/hi";
 import { FaInstagram, FaBehance, FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 
 export default function Footer() {
     return (
         <div
-            className="relative h-[calc(100dvh-80px)]  w-full"
+            className="relative h-[calc(100dvh-68px)]  w-full"
             style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
-            <footer className="fixed bottom-0 h-[calc(100dvh-80px)] w-full m-auto border-t border-neutral-200 text-outrageous-orange-50 bg-[#FE552A]">
+            <footer className="fixed bottom-0 h-[calc(100dvh-68px)] w-full m-auto border-t border-neutral-200 text-outrageous-orange-50 bg-[#FE552A]">
                 <div
                     className={`
             
@@ -22,7 +23,7 @@ export default function Footer() {
                     <div className="flex flex-col w-full md:w-1/3 mb-5">
                         <p
                             className={`
-                            text-2xl gelica mb-5
+                            text-4xl gelica mb-5
                         `}
                         >
                             Gostasse?

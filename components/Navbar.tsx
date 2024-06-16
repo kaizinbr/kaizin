@@ -142,9 +142,9 @@ export default function Navbar() {
                         <Link
                             href="/"
                             className={`
-                        font-bold
-                    
-                    `}
+                                font-bold
+                            
+                            `}
                         >
                             kai
                             <span

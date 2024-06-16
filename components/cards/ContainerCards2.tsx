@@ -35,13 +35,13 @@ const cards = [
         imageUrl: "/marilia.png",
         linkPath:
             "https://www.behance.net/gallery/181561229/Cartaz-tipografico-Marilia-Mendonca",
-            chips: ["web design", "acadêmico"],
+            chips: ["web design", "colaborativo"],
     },
     {
         name: "Embalagem Drip Coffee KAFFA",
         imageUrl: "/kaffa.png",
         linkPath: "https://www.behance.net/gallery/180723801/Drip-Coffee-KAFFA",
-        chips: ["web design", "acadêmico", "packaging"],
+        chips: ["web design", "colaborativo", "packaging"],
     },
     {
         name: "Lyricard Generator",
@@ -70,7 +70,7 @@ const cards = [
             backgroundColor = "bg-mortar-900";
         } else if (title === "branding") {
             backgroundColor = "bg-purple-500";
-        } else if (title === "acadêmico") {
+        } else if (title === "colaborativo") {
             backgroundColor = "bg-pink-400";
         } else if (title === "packaging") {
             backgroundColor = "bg-indigo-500";
@@ -135,7 +135,7 @@ function Item({ imageUrl, linkPath, chips }: { imageUrl: string; linkPath: strin
 export default function ContainerCards({ props }: { props?: any }) {
     return (
         <div
-            className={`relative flex w-full flex-col  py-4 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24 ${props} `}
+            className={`relative w-full py-4 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24 ${props} `}
         >
             {cards.map((card, index) => (
                 <Item

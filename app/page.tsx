@@ -8,6 +8,13 @@ export default function Home() {
             className={`m-auto flex min-h-screen w-full max-w-screen-lg flex-col gap-6 px-6 py-4 md:px-12 lg:px-0`}
         >
             <div
+                    className={`
+                                font-bold mielle-title text-5xl mt-8 m-auto
+                            `}
+                >
+                    kaizin
+                </div>
+            <div
                 className={`gelica mb-28 mt-12 flex min-h-[calc(60vh-48px)] items-center text-pretty px-6 text-center text-3xl md:px-16`}
             >
                 <p className={` `}>
