@@ -1,4 +1,6 @@
 'use client';
+
+// obrigado especial a https://blog.olivierlarose.com/ que me ajudou a montar essa ideia
 import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import Button from './Button/Button';
