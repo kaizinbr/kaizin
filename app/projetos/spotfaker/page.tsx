@@ -28,7 +28,7 @@ export default function Projetos() {
             </div>
             <div className="col-span-6 flex-flex-row order-2 mb-8 md:order-3">
                 <Image
-                    src="/spot.png"
+                    src="/spot.webp"
                     alt="print"
                     width={400}
                     height={850}

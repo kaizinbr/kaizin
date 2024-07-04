@@ -13,7 +13,7 @@ import { useRef, useEffect, useState } from "react";
 const cards = [
     {
         name: "Spotfaker",
-        imageUrl: "/spot.png",
+        imageUrl: "/spot.webp",
         linkPath: "/projetos/spotfaker",
         chips: ["website"],
     },
