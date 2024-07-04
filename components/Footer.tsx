@@ -2,6 +2,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaInstagram, FaBehance, FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
+import ContactBtn from "./ContactBtn";
 
 export default function Footer() {
     return (
@@ -28,6 +29,7 @@ export default function Footer() {
                         >
                             Gostasse?
                         </p>
+                        <ContactBtn />
                         <p
                             className={`
                             text-base mb-3

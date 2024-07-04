@@ -82,6 +82,21 @@ body {
     color: rgba(var(--foreground-rgb), 1);
 }
 
+
+.infiniteLinear {
+    animation: infinite-slide 3s linear 0s infinite;
+    transition: top .75s ease-out;
+}
+
+@keyframes style_slide__V39TI {
+    to {
+        transform: translateX(calc(-100% - 15px))
+    }
+}
+
+
+
+
 .mielle-title {
     font-family: "mielle-cf", sans-serif;
     font-weight: 700;

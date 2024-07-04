@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { Github } from "lucide";
 
 export default function Projetos() {
     return (
@@ -14,21 +13,25 @@ export default function Projetos() {
         `}
         >
             <div className="col-span-12 mb-10 order-1">
-                <h2 className="text-3xl gelica">Djamena Agency</h2>
+                <h2 className="text-3xl gelica">Spotfaker</h2>
             </div>
             <div className="desc col-span-6 mb-8 order-3 md:order-2">
                 <p>
-                    Uma <i>landing page</i> para a agência de viagens Djamena
-                    Agency. O projeto foi desenvolvido com Next.js, React e
-                    estilizado com Tailwind CSS e a biblioteca NextUI.
+                    O projeto consiste em um web app que permite ao usuário
+                    criar uma imagem de Máquina do Tempo idêntica a criada pelo
+                    recurso do app Spotify, mas totalmente personalizável pelo
+                    usuário. Junto dela, aprimorei uma ferramenta de criação de
+                    cards com letras que já havia feito antes, também no mesmo
+                    design do spotify, mas sem as limitações de linhas e
+                    tamanho.
                 </p>
             </div>
             <div className="col-span-6 flex-flex-row order-2 mb-8 md:order-3">
                 <Image
-                    src="/djamena.png"
+                    src="/spot.png"
                     alt="print"
-                    width={800}
-                    height={450}
+                    width={400}
+                    height={850}
                     className={`
                     rounded-xl w-full
                     group-hover:opacity-85
@@ -37,7 +40,7 @@ export default function Projetos() {
                 />
             </div>
             <Link
-                href="https://djamenaagency.com.br"
+                href="https://spotfaker.kaizin.com.br/"
                 target="_blank"
                 className={`
                 flex justify-start items-center
@@ -54,12 +57,13 @@ export default function Projetos() {
                         text-2xl mr-3
                     `}
                 >
-                    Djamena Agency
+                    Spotfaker
                 </span>
                 <FiExternalLink className="size-4" />
             </Link>
+            
             <Link
-                href="https://github.com/kaizinbr/djamena"
+                href="https://github.com/kaizinbr/spotfaker"
                 target="_blank"
                 className={`
                 flex justify-start items-center

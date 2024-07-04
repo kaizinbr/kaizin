@@ -20,7 +20,7 @@ const menu = {
         width: "100px",
         maxWidth: "480px",
         height: "40px",
-        maxHeight: "auto",
+        maxHeight: "calc(100vh - 56px)",
         top: "0px",
         right: "0px",
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1]}

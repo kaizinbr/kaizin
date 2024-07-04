@@ -12,6 +12,12 @@ import { useRef, useEffect, useState } from "react";
 
 const cards = [
     {
+        name: "Spotfaker",
+        imageUrl: "/spot.png",
+        linkPath: "/projetos/spotfaker",
+        chips: ["website"],
+    },
+    {
         name: "Djamena Agency",
         imageUrl: "/djamena.png",
         linkPath: "/projetos/djamena",
@@ -42,12 +48,6 @@ const cards = [
         imageUrl: "/kaffa.png",
         linkPath: "https://www.behance.net/gallery/180723801/Drip-Coffee-KAFFA",
         chips: ["web design", "colaborativo", "packaging"],
-    },
-    {
-        name: "Lyricard Generator",
-        imageUrl: "/lyricardmain.png",
-        linkPath: "/projetos/lyricard",
-        chips: ["website"],
     },
     {
         name: "Instagram Clone",
