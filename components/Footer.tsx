@@ -29,7 +29,7 @@ export default function Footer() {
                         >
                             Gostasse?
                         </p>
-                        <ContactBtn />
+                        {/* <ContactBtn /> */}
                         <p
                             className={`
                             text-base mb-3
