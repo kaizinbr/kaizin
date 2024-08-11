@@ -116,7 +116,7 @@ function Item({ imageUrl, linkPath, chips }: { imageUrl: string; linkPath: strin
                 <Image
                     src={imageUrl}
                     alt="print"
-                    width={800}
+                    width={500}
                     height={450}
                     className={`h-full object-cover transition duration-200 group-hover:opacity-85`}
                 />
@@ -135,7 +135,7 @@ function Item({ imageUrl, linkPath, chips }: { imageUrl: string; linkPath: strin
 export default function ContainerCards({ props }: { props?: any }) {
     return (
         <div
-            className={`relative w-full py-4 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24 ${props} `}
+            className={`relative w-full py-4 pb-10 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24 ${props} `}
         >
             {cards.map((card, index) => (
                 <Item
