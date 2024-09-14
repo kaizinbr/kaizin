@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* // Vendors */
+/* @import 'node_modules/locomotive-scroll/dist/locomotive-scroll'; */
 @import url("https://use.typekit.net/oue7veo.css");
 @font-face {
     font-family: "Eigerdals W00 Black";
