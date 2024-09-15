@@ -117,9 +117,10 @@ function Item({
         <div
             ref={ref}
             className={`
-                relative mb-8  w-full md:w-[calc(50%-16px)] md:mx-2 h-8 box 
-                flex justify-center items-center overflow-hidden rounded-xl
-                bg-center bg-cover transition duration-200 group-hover:opacity-85    
+                relative  w-full md:w-[calc(50%-16px)] md:mx-2 h-8 box 
+                flex justify-center items-center overflow-hidden rounded-none hover:rounded-3xl
+                bg-center bg-cover transition-all duration-200   
+                hover:shadow-lg group
             `}
 
             style={{backgroundImage: `url(${imageUrl})`}}
@@ -127,21 +128,19 @@ function Item({
         >
             <div
                 // href={linkPath}
-                className={`group flex h-full w-fit flex-col items-center justify-start overflow-hidden rounded-xl transition duration-200 hover:text-neutral-800 hover:underline`}
+                className={`
+                    group flex h-full w-full flex-col items-center justify-center 
+                    overflow-hidden rounded-xl transition duration-200 bg-transparent backdrop-blur-0
+                    text-neutral-200 hover:underline group-hover:bg-black/40 backdrop-filter hover:backdrop-blur-md
+                `}
             >
-                {/* <Image
-                    src={imageUrl}
-                    alt="print"
-                    width={500}
-                    height={450}
-                    className={`h-full object-cover transition duration-200 group-hover:opacity-85`}
-                /> */}
+                <h1 className="gelica-title text-3xl opacity-0 transition-all duration-200 group-hover:opacity-100">Ver projeto</h1>
             </div>
-            <div className="absolute bottom-0 left-0 z-10 flex flex-row">
+            {/* <div className="absolute bottom-0 left-0 z-10 flex flex-row">
                 {chips.map((chip, index) => (
                     <Chip key={index} title={chip} />
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }
@@ -157,9 +156,9 @@ export default function ContainerCards({ props }: { props?: any }) {
 
     useGSAP(
         () => {
-            const boxes = gsap.utils.toArray(".box");
+            const boxes = gsap.utils.toArray<HTMLElement>(".box");
 
-            const conts = gsap.utils.toArray(".cont");
+            const conts = gsap.utils.toArray<HTMLElement>(".cont");
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
