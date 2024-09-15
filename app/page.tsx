@@ -1,6 +1,4 @@
-import ContainerCards from "@/components/cards/ContainerCards2";
-import Image from "next/image";
-import Link from "next/link";
+import Feed from "@/components/cards/Feed";
 
 export default function Home() {
     return (
@@ -29,12 +27,11 @@ export default function Home() {
             </div>
 
             <div className="col-span-full flex flex-col gap-4">
-                <h1 className={`mb-6 text-center text-2xl font-bold`}>
+                <h1 className={`mb-6 text-center gelica text-2xl font-bold`}>
                     agora alguns projetos
                 </h1>
 
-                <ContainerCards />
-
+                <Feed />
             </div>
         </main>
     );

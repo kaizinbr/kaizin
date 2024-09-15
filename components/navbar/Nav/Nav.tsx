@@ -13,22 +13,25 @@ export default function Nav({
             className={`flex flex-col justify-between pt-10 px-10 pb-10 h-full`}
         >
             <div className={`flex gap-3 flex-col`}>
-            <motion.div
-                variants={slideIn}
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                custom={0}
-            >
-                <Link
-                    href="/"
-                    className={`
+                <motion.div
+                    variants={slideIn}
+                    initial="initial"
+                    animate="enter"
+                    exit="exit"
+                    custom={0}
+                >
+                    <Link
+                        href="/"
+                        className={`
                                 font-bold mielle-title text-3xl mb-12
                             `}
-                >
-                    kaizin
-                </Link>
-            </motion.div>
+                        onClick={() => {
+                            setIsActive(false);
+                        }}
+                    >
+                        kaizin
+                    </Link>
+                </motion.div>
                 {links.map((link, i) => {
                     const { title, href } = link;
                     return (

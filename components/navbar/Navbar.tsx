@@ -27,7 +27,7 @@ const menu = {
     }
 }
 
-export default function Index() {
+export default function Navbar() {
     const [isActive, setIsActive] = useState(false);
     const [scroll, setScroll] = useState(false);
 
