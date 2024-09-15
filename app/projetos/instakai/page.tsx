@@ -14,6 +14,9 @@ export default function Projetos() {
             <div 
                 className="col-span-12 mb-10 order-1"
             >
+            <span className="text-sm gelica-menu text-neutral-600">
+                14/01/2024 | Website
+            </span>
                 <h2 className="text-3xl gelica">Insta Clone</h2>
             </div>
             <div className="desc col-span-6 mb-8 order-3 md:order-2">

@@ -14,10 +14,14 @@ export default function Projetos() {
             <div 
                 className="col-span-12 mb-10 order-1"
             >
+                
+                <span className="text-sm gelica-menu text-neutral-600">
+                    21/01/2024 | Website
+                </span>
                 <h2 className="text-3xl gelica">xisbank</h2>
             </div>
             <div className="desc col-span-6 mb-8 order-3 md:order-2">
-                <p>Uma <i>landing page</i> de um banco digital simples.</p>
+                <p>A página de um banco digital simples.</p>
             </div>
             <div className="col-span-6 flex-flex-row order-2 mb-8 md:order-3">
                 <Image src="/xisbank.png" alt="print" width={800} height={450} className={`

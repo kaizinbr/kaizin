@@ -16,15 +16,16 @@ const inter = Inter({ subsets: ["latin"] });
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "kaizin",
-    description: "Portfólio de Kaio Lucas, desenvolvedor front end e designer.",	
+    title: "Sobre mim | kaizin",
+    description: "Portfólio de Kaio Lucas, desenvolvedor front end e designer.",
     openGraph: {
         type: "website",
         locale: "pt_BR",
-        url: "https://kaizin.vercel.app",
+        url: "https://kaizin.com.br/sobre",
         siteName: "kaizin",
         title: "kaizin",
-        description: "Portfólio de Kaio Lucas, desenvolvedor front end e designer.",
+        description:
+            "Portfólio de Kaio Lucas, desenvolvedor front end e designer.",
         images: [
             {
                 url: "https://kaizin.vercel.app/site-banner.png",
@@ -45,7 +46,6 @@ export const metadata: Metadata = {
             },
         ],
     },
-
 };
 
 export default function RootLayout({
@@ -53,34 +53,5 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return (
-        <html lang="pt-br">
-            <head>
-                <link
-                    rel="stylesheet"
-                    href="https://use.typekit.net/oue7veo.css"
-                ></link>
-                <link rel="icon" href="/favicon.ico" sizes="any" />
-            </head>
-            <body
-                className={
-                    myFont.className +
-                    `
-                    bg-white-seashell
-                    text-neutral-900  
-                    mt-20
-                    flex flex-col
-                    justify-center items-start
-                    overflow-x-hidden
-                `
-                }
-            >
-                <SmoothWrapper>
-                    <Navbar />
-                    {children}
-                    <Footer />
-                </SmoothWrapper>
-            </body>
-        </html>
-    );
+    return <div>{children}</div>;
 }
