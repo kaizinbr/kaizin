@@ -48,7 +48,8 @@ export default function RootLayout({
                     mt-20
                     flex flex-col
                     justify-center
-                    overflow-x-hidden
+                    overflow-x-hidden w-full items-center
+                    w-full items-center
                 `
                 }
             >
