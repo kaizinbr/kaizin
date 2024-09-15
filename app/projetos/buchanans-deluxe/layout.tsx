@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
-
 
 export const metadata: Metadata = {
     title: "Fotografia de produto - Buchanan's Deluxe 12 years | kaizin",
