@@ -17,45 +17,45 @@ import { useGSAP } from "@gsap/react";
 const cards = [
     {
         name: "Spotfaker",
-        imageUrl: "/spot.webp",
+        imageUrl: "/fundos/spot.webp",
         linkPath: "/projetos/spotfaker",
         chips: ["website"],
     },
     {
         name: "xisbank",
-        imageUrl: "/xisbank.png",
+        imageUrl: "/fundos/xisbank.webp",
         linkPath: "/projetos/xisbank",
         chips: ["web design", "landing page"],
     },
     {
         name: "Identidade Visual SouDigital",
-        imageUrl: "/sd.png",
+        imageUrl: "/fundos/sd.webp",
         linkPath:
             "https://www.behance.net/gallery/187066273/SouDigital-Identidade-Visual",
         chips: ["web design", "identidade visual", "branding"],
     },
     {
         name: "Djamena Agency",
-        imageUrl: "/djamena.png",
+        imageUrl: "/fundos/djamena.webp",
         linkPath: "/projetos/djamena",
         chips: ["web design", "landing page", "website"],
     },
     {
         name: "Cartaz tipográfico Marília Mendonça",
-        imageUrl: "/marilia.png",
+        imageUrl: "/fundos/marilia.webp",
         linkPath:
             "https://www.behance.net/gallery/181561229/Cartaz-tipografico-Marilia-Mendonca",
         chips: ["web design", "colaborativo"],
     },
     {
         name: "Embalagem Drip Coffee KAFFA",
-        imageUrl: "/kaffa.png",
+        imageUrl: "/fundos/kaffa.webp",
         linkPath: "https://www.behance.net/gallery/180723801/Drip-Coffee-KAFFA",
         chips: ["web design", "colaborativo", "packaging"],
     },
     {
         name: "Instagram Clone",
-        imageUrl: "/instakai.png",
+        imageUrl: "/fundos/instakai.webp",
         linkPath: "/projetos/instakai",
         chips: ["website"],
     },
