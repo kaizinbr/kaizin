@@ -47,7 +47,7 @@ export default function RootLayout({
                     text-neutral-900  
                     mt-20
                     flex flex-col
-                    justify-center items-start
+                    justify-center
                     overflow-x-hidden
                 `
                 }
