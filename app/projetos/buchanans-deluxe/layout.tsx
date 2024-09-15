@@ -33,3 +33,26 @@ export const metadata: Metadata = {
     },
 };
 
+export default function RootLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+            <main
+                className={
+                    `
+                    bg-white-seashell
+                    text-neutral-900  
+                    mt-20
+                    flex flex-col
+                    justify-center items-start
+                    overflow-x-hidden
+                `
+                }
+            >
+                    {children}
+            </main>
+    );
+}
+
