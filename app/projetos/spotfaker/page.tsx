@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import LocomotiveScroll from 'locomotive-scroll';
 
-const locomotiveScroll = new LocomotiveScroll();
 
 export default function Projetos() {
     return (
