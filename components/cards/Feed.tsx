@@ -135,7 +135,7 @@ function Item({
         <div
             ref={ref}
             className={`
-                relative  w-full md:w-[calc(50%-16px)] md:mx-2 h-8 box 
+                relative  w-full md:w-[calc(50%-16px)] md:mx-2 h-[400px] box 
                 flex justify-center items-center overflow-hidden rounded-none hover:rounded-3xl
                 bg-center bg-cover transition-all duration-200   
                 hover:shadow-lg group
@@ -172,37 +172,37 @@ export default function Feed({ props }: { props?: any }) {
 
     const container = useRef<HTMLElement | any>();
 
-    useGSAP(
-        () => {
-            const boxes = gsap.utils.toArray<HTMLElement>(".box");
+    // useGSAP(
+    //     () => {
+    //         const boxes = gsap.utils.toArray<HTMLElement>(".box");
 
-            const conts = gsap.utils.toArray<HTMLElement>(".cont");
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: container.current,
-                    start: "top 90%",
-                    end: "top top",
-                    scrub: 1.5,
-                },
-            });
+    //         const conts = gsap.utils.toArray<HTMLElement>(".cont");
+    //         const tl = gsap.timeline({
+    //             scrollTrigger: {
+    //                 trigger: container.current,
+    //                 start: "top 90%",
+    //                 end: "top top",
+    //                 scrub: 1.5,
+    //             },
+    //         });
 
-            boxes.forEach((box, index) => {
-                const cont = conts[index];
-                gsap.to(box, {
-                    height: "400px",
-                    duration: 1,
-                    scrollTrigger: {
-                        trigger: cont,
-                        start: "top 90%",
-                        end: "top top",
-                        scrub: 1.5,
-                        // markers: true,
-                    },
-                });
-            });
-        },
-        { scope: container }
-    );
+    //         boxes.forEach((box, index) => {
+    //             const cont = conts[index];
+    //             gsap.to(box, {
+    //                 height: "400px",
+    //                 duration: 1,
+    //                 scrollTrigger: {
+    //                     trigger: cont,
+    //                     start: "top 90%",
+    //                     end: "top top",
+    //                     scrub: 1.5,
+    //                     // markers: true,
+    //                 },
+    //             });
+    //         });
+    //     },
+    //     { scope: container }
+    // );
 
     return (
         <div

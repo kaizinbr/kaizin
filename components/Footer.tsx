@@ -10,7 +10,7 @@ export default function Footer() {
             className="relative h-[calc(100dvh-68px)]  w-full"
             style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
-            <footer className="fixed bottom-0 h-[calc(100dvh-68px)] w-full m-auto border-t border-neutral-200 text-outrageous-orange-50 bg-[#FE552A]">
+            <footer className="fixed bottom-0 h-[calc(100dvh-68px)] w-full m-auto border-t border-neutral-200 text-outrageous-orange-50 bg-outrageous-orange-400">
                 <div
                     className={`
             
@@ -32,7 +32,7 @@ export default function Footer() {
                         {/* <ContactBtn /> */}
                         <p
                             className={`
-                            text-base mb-3
+                            text-base mb-3 
                             text-pretty
                         `}
                         >
