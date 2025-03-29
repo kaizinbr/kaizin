@@ -1,4 +1,10 @@
 import Feed from "@/components/cards/Feed";
+import localFont from "next/font/local";
+
+const uglyDave = localFont({
+    src: "../resources/fonts/UglyDaveRegular.otf",
+    display: "swap",
+});
 
 export default function Home() {
     return (
@@ -6,8 +12,8 @@ export default function Home() {
             className={`m-auto flex min-h-screen w-full max-w-screen-lg flex-col gap-6 px-6 py-4 md:px-12 lg:px-0`}
         >
             <div
-                className={`
-                                font-bold mielle-title text-5xl mt-8 m-auto
+                className={uglyDave.className +`
+                                font-bold text-5xl mt-8 m-auto
                             `}
             >
                 kaizin
