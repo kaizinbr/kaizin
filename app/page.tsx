@@ -12,14 +12,14 @@ export default function Home() {
             className={`m-auto flex min-h-screen w-full max-w-screen-lg flex-col gap-6 px-6 py-4 md:px-12 lg:px-0`}
         >
             <div
-                className={uglyDave.className +`
-                                font-bold text-5xl mt-8 m-auto
-                            `}
+                className={
+                    uglyDave.className + ` m-auto mt-8 text-5xl font-bold uppercase `
+                }
             >
-                kaizin
+                kaizin<span className="animate-wiggle changecolor">.work</span>
             </div>
             <div
-                className={`gelica mb-28 mt-12 flex min-h-[calc(60vh-48px)] items-center text-pretty px-6 text-center text-3xl md:px-16`}
+                className={`gelica mt-12 mb-28 flex min-h-[calc(60vh-48px)] items-center px-6 text-center text-3xl text-pretty md:px-16`}
             >
                 <p className={` `}>
                     Trilhando novos{" "}
@@ -33,8 +33,8 @@ export default function Home() {
             </div>
 
             <div className="col-span-full flex flex-col gap-4">
-                <h1 className={`mb-6 text-center gelica text-2xl font-bold`}>
-                    agora alguns projetos
+                <h1 className={`gelica mb-6 text-center text-2xl font-bold`}>
+                    alguns projetos
                 </h1>
 
                 <Feed />

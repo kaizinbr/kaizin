@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import {
     motion,
@@ -13,8 +12,20 @@ import gsap from "gsap";
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import localFont from "next/font/local";
+
+const uglyDave = localFont({
+    src: "../../resources/fonts/UglyDaveRegular.otf",
+    display: "swap",
+});
 
 const cards = [
+    {
+        name: "Pitchforkd",
+        imageUrl: "/fundos/pitchforkd.webp",
+        linkPath: "/projetos/pitchforkd",
+        chips: ["website"],
+    },
     {
         name: "Buchanan's Deluxe",
         imageUrl: "/fundos/buchanans.webp",
@@ -116,10 +127,12 @@ function Chip({ title }: { title: string }) {
 function Item({
     imageUrl,
     linkPath,
+    name,
     chips,
 }: {
     imageUrl: string;
     linkPath: string;
+    name: string;
     chips: string[];
 }) {
     const ref = useRef(null);
@@ -132,33 +145,40 @@ function Item({
     const translateY = useTransform(scrollYProgress, [0, 1], [100, 0]);
 
     return (
-        <div
-            ref={ref}
-            className={`
-                relative  w-full md:w-[calc(50%-16px)] md:mx-2 h-[400px] box 
-                flex justify-center items-center overflow-hidden rounded-none hover:rounded-3xl
-                bg-center bg-cover transition-all duration-200   
-                hover:shadow-lg group
-            `}
-            style={{ backgroundImage: `url(${imageUrl})` }}
-        >
-            <Link
-                href={linkPath}
+        <div className="flex flex-col  w-full md:w-[calc(50%-16px)] md:mx-2">
+            <div
+                ref={ref}
                 className={`
-                    group flex h-full w-full flex-col items-center justify-center 
-                    overflow-hidden rounded-xl transition duration-200 bg-transparent backdrop-blur-0
-                    text-neutral-200 hover:underline group-hover:bg-black/40 backdrop-filter hover:backdrop-blur-md
+                    relative  h-[400px] box
+                    flex justify-center items-center overflow-hidden rounded-none hover:rounded-3xl
+                    bg-center bg-cover transition-all duration-200
+                    hover:shadow-lg group
                 `}
+                style={{ backgroundImage: `url(${imageUrl})` }}
             >
-                <h1 className="gelica-title text-3xl opacity-0 transition-all duration-200 group-hover:opacity-100">
-                    Ver projeto
-                </h1>
-            </Link>
-            {/* <div className="absolute bottom-0 left-0 z-10 flex flex-row">
-                {chips.map((chip, index) => (
-                    <Chip key={index} title={chip} />
-                ))}
-            </div> */}
+                <Link
+                    href={linkPath}
+                    className={`
+                        group flex h-full w-full flex-col items-center justify-center
+                        overflow-hidden rounded-xl transition duration-200 bg-transparent backdrop-blur-0
+                        text-neutral-200 hover:underline group-hover:bg-black/40 backdrop-filter hover:backdrop-blur-md
+                    `}
+                >
+                    <h1 className={uglyDave.className +`
+                            text-3xl opacity-0 transition-all duration-200 group-hover:opacity-100
+                        `}>
+                        Ver projeto
+                    </h1>
+                </Link>
+            </div>
+            <div className="flex flex-row gap-2 items-center justify-between mt-2 text-xs">
+                <Link href={linkPath}>
+                    <span className="">{name}</span>
+                </Link>
+                {/* <div className="flex flex-row gap-2 items-center justify-end">
+                    <span>{chips[0]}</span>
+                </div> */}
+            </div>
         </div>
     );
 }
@@ -170,7 +190,7 @@ if (typeof window !== "undefined") {
 export default function Feed({ props }: { props?: any }) {
     gsap.registerPlugin(useGSAP);
 
-    const container = useRef<HTMLElement | any>();
+    const container = useRef<HTMLElement | any>(null);
 
     // useGSAP(
     //     () => {
@@ -229,6 +249,7 @@ export default function Feed({ props }: { props?: any }) {
                     key={index}
                     imageUrl={card.imageUrl}
                     linkPath={card.linkPath}
+                    name={card.name}
                     chips={card.chips}
                 />
             ))}

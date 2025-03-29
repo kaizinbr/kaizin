@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { links, footerLinks } from "./data";
 import { perspective, slideIn } from "./anim";
 import Link from "next/link";
+import localFont from "next/font/local";
+
+const uglyDave = localFont({
+    src: "../../../resources/fonts/UglyDaveRegular.otf",
+    display: "swap",
+});
 
 export default function Nav({
     setIsActive,
@@ -22,9 +28,12 @@ export default function Nav({
                 >
                     <Link
                         href="/"
-                        className={`
-                                font-bold mielle-title text-3xl mb-12
-                            `}
+                        className={
+                            uglyDave.className +
+                            `
+                                font-bold text-3xl mb-12 uppercase
+                            `
+                        }
                         onClick={() => {
                             setIsActive(false);
                         }}
@@ -45,7 +54,12 @@ export default function Nav({
                         >
                             <Link
                                 href={href}
-                                className="text-5xl gelica-menu"
+                                className={`
+                                        text-5xl gelica-menu
+                                        hover:text-[#4b4553] hover:underline
+                                        hover:decoration-[#4b4553] hover:decoration-2
+                                        transition-all duration-200 ease-in-out
+                                    `}
                                 onClick={() => {
                                     setIsActive(false);
                                 }}
@@ -69,7 +83,6 @@ export default function Nav({
                             key={`f_${i}`}
                             className="w-1/2 mt-2"
                             href={href}
-                            target="_blank"
                         >
                             {title}
                         </motion.a>

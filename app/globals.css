@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 /* // Vendors */
 /* @import 'node_modules/locomotive-scroll/dist/locomotive-scroll'; */
 @import url("https://use.typekit.net/oue7veo.css");
@@ -20,10 +18,19 @@
             format("svg");
 }
 
-:root {
+@font-face {
+    font-family: Ugly Dave;
+    font-style: normal;
+    src: url("/resources/fonts/UglyDaveRegular.otf") format("opentype"),
+}
+
+@theme {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --font-ugly-dave: Ugly Dave;
+    --font-mielle: "mielle-cf", sans-serif;
 
     /* laranja */
     --outrageous-orange-50: #fff3ed;
@@ -64,6 +71,10 @@
     --antique-brass-900: #61352d;
     --antique-brass-950: #341a16;
 
+    --brown-sugar: #c47b5a;
+    --english-violet: #4b4553;
+    --giants-orange: #fe552a;
+
     --bg-seashell-rgb: 251, 243, 240;
 
     --red: #fe0222;
@@ -79,25 +90,33 @@
     }
 }
 
-body {
-    /* background-image: linear-gradient(-75deg, rgba(var(--foreground-rgb), .1) 0%, rgba(var(--background-end-rgb), 1) 100%); */
-    color: rgba(var(--foreground-rgb), 1);
-}
-
-
 .infiniteLinear {
     animation: infinite-slide 3s linear 0s infinite;
-    transition: top .75s ease-out;
+    transition: top 0.75s ease-out;
 }
 
 @keyframes style_slide__V39TI {
     to {
-        transform: translateX(calc(-100% - 15px))
+        transform: translateX(calc(-100% - 15px));
     }
 }
 
+@keyframes changecolor {
+    0%,
+    100% {
+        color: var(--brown-sugar);
+    }
+    33% {
+        color: var(--english-violet);
+    }
+    66% {
+        color: var(--giants-orange);
+    }
+}
 
-
+.changecolor {
+    animation: changecolor 1.5s ease-in-out infinite;
+}
 
 .mielle-title {
     font-family: "mielle-cf", sans-serif;
@@ -440,4 +459,3 @@ circle {
 .progress .indicator {
     stroke: var(--accent);
 }
-

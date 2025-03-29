@@ -15,8 +15,8 @@ export const links = [
 
 export const footerLinks = [
     {
-        title: "Email",
-        href: "mailto:kaiolucas1812@gmail.com"
+        title: "Contato",
+        href: "/contato"
     },
     {
         title: "Behance",
@@ -24,7 +24,7 @@ export const footerLinks = [
     },
     {
         title: "Instagram",
-        href: "https://www.instagram.com/05kaizin"
+        href: "https://www.instagram.com/kaizin.work"
     },
     {
         title: "Github",

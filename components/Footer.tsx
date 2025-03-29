@@ -38,9 +38,18 @@ export default function Footer() {
                         >
                             Se você gostou do meu trabalho e quer falar sobre
                             algum projeto, ideia ou tem alguma crítica, fique à
-                            vontade para entrar em contato comigo.
+                            vontade para entrar em contato comigo!
                         </p>
-                        <p
+
+                        <Link href={'/contato'} className={`
+                            px-6 py-2 rounded-full border-2 border-(--outrageous-orange-50)
+                            text-xl w-fit mt-5
+                            gelica hover:bg-(--outrageous-orange-50) hover:text-(--outrageous-orange-500)
+                            transition-all duration-200 ease-in-out
+                        `}>
+                            Fale comigo
+                        </Link>
+                        {/* <p
                             className={`
                             text-base mb-3
                             text-pretty
@@ -51,15 +60,9 @@ export default function Footer() {
                             sempre disposto a aprender e me aventurar em novas
                             áreas. Qualquer que seja a proposta, ficarei feliz
                             em dar uma olhada!
-                        </p>
+                        </p> */}
                     </div>
                     <div className="flex flex-row items-center justify-start md:justify-end w-full md:w-2/5 gap-3">
-                        <Link
-                            href="mailto:kaiolucas1812@gmail.com"
-                            target="_blank"
-                        >
-                            <HiOutlineMail className="size-6" />
-                        </Link>
                         <Link
                             href="https://www.behance.net/kaizin"
                             target="_blank"
@@ -67,7 +70,7 @@ export default function Footer() {
                             <FaBehance className="size-6" />
                         </Link>
                         <Link
-                            href="https://www.instagram.com/05kaizin"
+                            href="https://www.instagram.com/kaizin.work"
                             target="_blank"
                         >
                             <FaInstagram className="size-5" />
