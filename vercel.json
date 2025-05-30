@@ -1,0 +1,16 @@
+// vercel.json
+{
+  "redirects": [
+    {
+      "source": "/(.*)", // Captura qualquer caminho no subdomínio
+      "has": [
+        {
+          "type": "host",
+          "value": "pesquisa.kaizin.work"
+        }
+      ],
+      "destination": "https://forms.gle/QbxCY7HFaBX2VFKH6", // Substitua pelo link do seu formulário
+      "permanent": true // true para 308 (permanente), false para 307 (temporário)
+    }
+  ]
+}
