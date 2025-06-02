@@ -44,7 +44,7 @@ export default function Projetos() {
                 />
             </div>
             <Link
-                href="https://spotfaker.kaizin.com.br/"
+                href="https://spotfaker.kaizin.work/"
                 target="_blank"
                 className={`
                 flex justify-start items-center

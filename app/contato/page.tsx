@@ -54,38 +54,20 @@ export default function Habilidades() {
                     </p>
 
                     <Link
-                        href={"mailto:contato@kaizin.work"}
+                        href={"mailto:kaizin.work@gmail.com"}
                         target="_blank"
                         className="text-3xl text-[#FE552A] text-pretty font-bold mb-3 gelica"
                     >
-                        contato@kaizin.work
+                        kaizin.work@gmail.com
                     </Link>
-                    <Link
+                    {/* <Link
                         href="https://www.instagram.com/kaizin.work"
                         target="_blank"
                         className="text-xl text-[#FE552A] text-pretty font-bold mb-3 gelica"
                     >
                         instagram.com/kaizin.work
-                    </Link>
+                    </Link> */}
 
-                    <p
-                        className={`
-                            text-xs mb-3
-                            text-pretty
-                            md:max-w-1/2
-                        `}
-                    >
-                        Se <i>por acaso</i> o e-mail acima não funcionar, tente
-                        entrar em contato por{" "}
-                        <Link
-                            href="mailto:kaizin.work@gmail.com"
-                            target="_blank"
-                            className="underline text-[#FE552A] text-pretty font-bold mb-3 gelica"
-                        >
-                            clicando aqui
-                        </Link>
-                        .
-                    </p>
                 </div>
             </div>
         </main>
