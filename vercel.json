@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "pesquisa.kaizin.work"
+        }
+      ],
+      "destination": "https://forms.gle/QbxCY7HFaBX2VFKH6", 
+      "permanent": true
+    }
+  ]
+}
