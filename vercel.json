@@ -1,15 +1,26 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
+    "redirects": [
         {
-          "type": "host",
-          "value": "pesquisa.kaizin.work"
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "pesquisa.kaizin.work"
+                }
+            ],
+            "destination": "https://forms.gle/QbxCY7HFaBX2VFKH6",
+            "permanent": true
+        },
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.pesquisa.kaizin.work"
+                }
+            ],
+            "destination": "https://forms.gle/QbxCY7HFaBX2VFKH6",
+            "permanent": true
         }
-      ],
-      "destination": "https://forms.gle/QbxCY7HFaBX2VFKH6", 
-      "permanent": true
-    }
-  ]
+    ]
 }
