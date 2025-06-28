@@ -11,6 +11,16 @@ const nextConfig = {
                 destination: "https://drive.google.com/file/d/1fgg5D4OkknrzAI-zNuab-yfc3TcdEQ0S/view?usp=sharing",
                 permanent: true,
             },
+            {
+                source: "/mapa",
+                destination: "https://drive.google.com/file/d/1rb0p2pUm1BqsTfxT8Z6mU_SU_LJzkPsa/view?usp=sharing",
+                permanent: true,
+            },
+            {
+                source: "/brainstorming",
+                destination: "https://drive.google.com/file/d/14itE-ItNqM92xIYMNy1f0WRP0krCEzDo/view?usp=drive_link",
+                permanent: true,
+            },
         ];
     },
 };
