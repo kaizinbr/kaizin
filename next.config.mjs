@@ -21,6 +21,11 @@ const nextConfig = {
                 destination: "https://drive.google.com/file/d/14itE-ItNqM92xIYMNy1f0WRP0krCEzDo/view?usp=drive_link",
                 permanent: true,
             },
+            {
+                source: "/prototipo",
+                destination: "https://www.figma.com/proto/kCHROs6EtellBN0mYVhs70/wireframes?node-id=151-1193&t=RYkzH53ok4jx9ia1-1",
+                permanent: true,
+            },
         ];
     },
 };
