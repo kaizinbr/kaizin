@@ -1,7 +1,8 @@
-@import "tailwindcss";
-/* // Vendors */
-/* @import 'node_modules/locomotive-scroll/dist/locomotive-scroll'; */
+
 @import url("https://use.typekit.net/oue7veo.css");
+@import "tailwindcss";
+
+
 @font-face {
     font-family: "Eigerdals W00 Black";
     src: url("https://db.onlinewebfonts.com/t/e483e7f024096d15e1caaf9e39123f49.eot");
@@ -24,6 +25,12 @@
     src: url("/resources/fonts/UglyDaveRegular.otf") format("opentype"),
 }
 
+@font-face {
+    font-family: Kaio;
+    font-style: bold;
+    src: url("/resources/fonts/Kaio-Bold.otf") format("opentype"),
+}
+
 @theme {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -31,19 +38,20 @@
 
     --font-ugly-dave: Ugly Dave;
     --font-mielle: "mielle-cf", sans-serif;
+    --font-kaio: Kaio;
 
     /* laranja */
-    --outrageous-orange-50: #fff3ed;
-    --outrageous-orange-100: #ffe2d4;
-    --outrageous-orange-200: #ffc2a9;
-    --outrageous-orange-300: #ff9772;
-    --outrageous-orange-400: #fe552a;
-    --outrageous-orange-500: #fd3812;
-    --outrageous-orange-600: #ee1e08;
-    --outrageous-orange-700: #c51109;
-    --outrageous-orange-800: #9c1010;
-    --outrageous-orange-900: #7e1110;
-    --outrageous-orange-950: #440608;
+    --color-outrageous-orange-50: #fff3ed;
+    --color-outrageous-orange-100: #ffe2d4;
+    --color-outrageous-orange-200: #ffc2a9;
+    --color-outrageous-orange-300: #ff9772;
+    --color-outrageous-orange-400: #fe552a;
+    --color-outrageous-orange-500: #fd3812;
+    --color-outrageous-orange-600: #ee1e08;
+    --color-outrageous-orange-700: #c51109;
+    --color-outrageous-orange-800: #9c1010;
+    --color-outrageous-orange-900: #7e1110;
+    --color-outrageous-orange-950: #440608;
 
     /* violet */
     --mortar-50: #f6f6f8;
@@ -77,11 +85,13 @@
 
     --bg-seashell-rgb: 251, 243, 240;
 
-    --red: #fe0222;
-    --orange: #fd7702;
-    --yellow: #ffbb00;
+    --color-seashell: #fbf3f0;
 
-    --accent: var(--red);
+    --color-red: #fe0222;
+    --color-orange: #fd7702;
+    --color-yellow: #ffbb00;
+
+    --accent: var(--color-red);
 }
 
 @layer utilities {
@@ -146,48 +156,9 @@
     font-family: "Eigerdals W00 Black";
 }
 
-.bg-outrageous-orange-50 {
-    background-color: var(--outrageous-orange-50);
-}
-
-.bg-outrageous-orange-100 {
-    background-color: var(--outrageous-orange-100);
-}
-
-.bg-outrageous-orange-200 {
-    background-color: var(--outrageous-orange-200);
-}
-
-.bg-outrageous-orange-300 {
-    background-color: var(--outrageous-orange-300);
-}
-
-.bg-outrageous-orange-400 {
-    background-color: var(--outrageous-orange-400);
-}
-
-.bg-outrageous-orange-500 {
-    background-color: var(--outrageous-orange-500);
-}
-
-.bg-outrageous-orange-600 {
-    background-color: var(--outrageous-orange-600);
-}
-
-.bg-outrageous-orange-700 {
-    background-color: var(--outrageous-orange-700);
-}
-
-.bg-outrageous-orange-800 {
-    background-color: var(--outrageous-orange-800);
-}
-
-.bg-outrageous-orange-900 {
-    background-color: var(--outrageous-orange-900);
-}
-
-.bg-outrageous-orange-950 {
-    background-color: var(--outrageous-orange-950);
+.kaio-bold {
+    font-family: Kaio;
+    font-weight: bold;
 }
 
 .bg-mortar-50 {
