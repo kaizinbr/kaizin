@@ -69,25 +69,25 @@ const cards = [
         linkPath: "/projetos/djamena",
         chips: ["web design", "landing page", "website"],
     },
-    {
-        name: "Cartaz tipográfico Marília Mendonça",
-        imageUrl: "/fundos/marilia.webp",
-        linkPath:
-            "https://www.behance.net/gallery/181561229/Cartaz-tipografico-Marilia-Mendonca",
-        chips: ["web design", "colaborativo"],
-    },
-    {
-        name: "Embalagem Drip Coffee KAFFA",
-        imageUrl: "/fundos/kaffa.webp",
-        linkPath: "https://www.behance.net/gallery/180723801/Drip-Coffee-KAFFA",
-        chips: ["web design", "colaborativo", "packaging"],
-    },
-    {
-        name: "Instagram Clone",
-        imageUrl: "/fundos/instakai.webp",
-        linkPath: "/projetos/instakai",
-        chips: ["website"],
-    },
+    // {
+    //     name: "Cartaz tipográfico Marília Mendonça",
+    //     imageUrl: "/fundos/marilia.webp",
+    //     linkPath:
+    //         "https://www.behance.net/gallery/181561229/Cartaz-tipografico-Marilia-Mendonca",
+    //     chips: ["web design", "colaborativo"],
+    // },
+    // {
+    //     name: "Embalagem Drip Coffee KAFFA",
+    //     imageUrl: "/fundos/kaffa.webp",
+    //     linkPath: "https://www.behance.net/gallery/180723801/Drip-Coffee-KAFFA",
+    //     chips: ["web design", "colaborativo", "packaging"],
+    // },
+    // {
+    //     name: "Instagram Clone",
+    //     imageUrl: "/fundos/instakai.webp",
+    //     linkPath: "/projetos/instakai",
+    //     chips: ["website"],
+    // },
 ];
 
 function Chip({ title }: { title: string }) {

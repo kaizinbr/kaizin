@@ -22,10 +22,10 @@ export const footerLinks = [
         title: "Behance",
         href: "https://www.behance.net/kaizin"
     },
-    {
-        title: "Instagram",
-        href: "https://www.instagram.com/kaizin.work"
-    },
+    // {
+    //     title: "Instagram",
+    //     href: "https://www.instagram.com/kaizin.work"
+    // },
     {
         title: "Github",
         href: "https://github.com/kaizinbr"

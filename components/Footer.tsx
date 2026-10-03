@@ -10,7 +10,7 @@ export default function Footer() {
             className="relative h-[calc(100dvh-68px)]  w-full"
             style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
-            <footer className="fixed bottom-0 h-[calc(100dvh-68px)] w-full m-auto border-t border-neutral-200 text-outrageous-orange-50 bg-outrageous-orange-400">
+            <footer className="fixed bottom-0 h-[calc(100dvh-68px)] w-full m-auto border-t border-neutral-200 text-outrageous-orange-50! bg-outrageous-orange-400">
                 <div
                     className={`
             
@@ -69,12 +69,12 @@ export default function Footer() {
                         >
                             <FaBehance className="size-6" />
                         </Link>
-                        <Link
+                        {/* <Link
                             href="https://www.instagram.com/kaizin.work"
                             target="_blank"
                         >
                             <FaInstagram className="size-5" />
-                        </Link>
+                        </Link> */}
                         <Link
                             href="https://github.com/kaizinbr"
                             target="_blank"

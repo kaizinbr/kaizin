@@ -37,8 +37,7 @@ export default function Projetos() {
                     mistério, dando destaque ao vermelho.
                 </p>
                 <p>
-                    As fotos podem demorar um pouco para carregar por conta da
-                    qualidade! E todos o créditos vão para o autor do livro,{" "}
+                    Todos os créditos vão para o autor do livro,{" "}
                     <strong>Mark Miller</strong>, e para a editora <strong>Companhia Editora Nacional</strong>.
                 </p>
             </div>

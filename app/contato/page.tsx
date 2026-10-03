@@ -49,24 +49,16 @@ export default function Habilidades() {
                             md:max-w-1/2
                         `}
                     >
-                        Pode me mandar um e-mail ou falar comigo no Instagram,
-                        como preferir:
+                        Pode me contatar através do meu e-mail, ficarei feliz em responder o mais rápido possível.
                     </p>
 
                     <Link
-                        href={"mailto:kaizin.work@gmail.com"}
+                        href={"mailto:kaizin@kaizin.work"}
                         target="_blank"
                         className="text-3xl text-[#FE552A] text-pretty font-bold mb-3 gelica"
                     >
-                        kaizin.work@gmail.com
+                        kaizin@kaizin.work
                     </Link>
-                    {/* <Link
-                        href="https://www.instagram.com/kaizin.work"
-                        target="_blank"
-                        className="text-xl text-[#FE552A] text-pretty font-bold mb-3 gelica"
-                    >
-                        instagram.com/kaizin.work
-                    </Link> */}
 
                 </div>
             </div>

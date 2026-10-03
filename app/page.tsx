@@ -13,7 +13,8 @@ export default function Home() {
         >
             <div
                 className={
-                    uglyDave.className + ` m-auto mt-8 text-5xl font-bold uppercase `
+                    uglyDave.className +
+                    ` m-auto mt-8 text-5xl font-bold uppercase `
                 }
             >
                 kaizin<span className="animate-wiggle changecolor">.work</span>
@@ -21,7 +22,7 @@ export default function Home() {
             <div
                 className={`gelica mt-12 mb-28 flex min-h-[calc(60vh-48px)] items-center px-6 text-center text-3xl text-pretty md:px-16`}
             >
-                <p className={` `}>
+                {/* <p className={` `}>
                     Trilhando novos{" "}
                     <span className="text-[#C47B5A]">caminhos </span> através de
                     linhas de <span className="text-[#4B4553]">código{""}</span>
@@ -29,6 +30,9 @@ export default function Home() {
                     <span className="text-[#FE552A]">criatividade</span>.
                     Perfeito para conversar sobre músicas, livros e boas
                     tipografias.
+                </p> */}
+                <p className={` `}>
+                    Olá...
                 </p>
             </div>
 
