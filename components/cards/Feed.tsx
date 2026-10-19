@@ -21,6 +21,12 @@ const uglyDave = localFont({
 
 const cards = [
     {
+        name: "Nefruza",
+        imageUrl: "/nefruza.png",
+        linkPath: "https://www.nefruza.com.br/",
+        chips: ["website"],
+    },
+    {
         name: "Pitchforkd",
         imageUrl: "/fundos/pitchforkd.webp",
         linkPath: "/projetos/pitchforkd",

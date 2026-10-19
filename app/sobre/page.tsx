@@ -11,7 +11,7 @@ export default function Habilidades() {
                 md:px-12 lg:px-0 px-6
             `}
             >
-                <picture
+                {/* <picture
                     className={`md:w-2/4`}
                     >
                     <Image
@@ -21,10 +21,10 @@ export default function Habilidades() {
                         height={800}
                         className="object-contain mb-6  max-w-[500px] w-full md:h-auto"
                     />
-                </picture>
+                </picture> */}
                 <div className="texto flex flex-col w-full md:w-2/4">
                     <h1 className={`text-5xl text-start gelica mb-6`}>
-                        se você veio até aqui, me chame de Kai.
+                        um pouco sobre mim
                     </h1>
                     <p className={`text-pretty mb-6`}>
                         Se quiser saber mais sobre minhas habilidades, é nessa
@@ -35,7 +35,7 @@ export default function Habilidades() {
                         !
                     </p>
                     <p className={`text-pretty mb-6`}>
-                        Olá! Me chamo Kaio, tenho 18 anos e sou um desenvolvedor web
+                        Olá! Me chamo Kaio, tenho 21 anos e sou um desenvolvedor web
                         junior e estudante de Design Gráfico. Moro em João Pessoa,
                         Paraíba e atualmente busco oportunidades de mostrar e
                         desenvolver minhas habilidades.

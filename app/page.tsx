@@ -1,5 +1,6 @@
 import Feed from "@/components/cards/Feed";
 import localFont from "next/font/local";
+import Image from "next/image";
 
 const uglyDave = localFont({
     src: "../resources/fonts/UglyDaveRegular.otf",
@@ -14,15 +15,23 @@ export default function Home() {
             <div
                 className={
                     uglyDave.className +
-                    ` m-auto mt-8 text-5xl font-bold uppercase `
+                    ` m-auto mt-8 text-2xl font-bold uppercase text-pretty md:text-3xl
+                        flex flex-col items-center gap-2 text-center
+                    `
                 }
             >
-                kaizin<span className="animate-wiggle changecolor">.work</span>
+                <Image 
+                    src="/kaio.svg"
+                    alt="Kaizin Logo"
+                    width={100}
+                    height={100}
+                />
+                <h1>kaizin</h1>
             </div>
-            <div
-                className={`gelica mt-12 mb-28 flex min-h-[calc(60vh-48px)] items-center px-6 text-center text-3xl text-pretty md:px-16`}
+            {/* <div
+                className={`gelica mt-12 mb-28 flex  items-center px-6 text-center text-xl text-pretty md:px-16`}
             >
-                {/* <p className={` `}>
+                <p className={` `}>
                     Trilhando novos{" "}
                     <span className="text-[#C47B5A]">caminhos </span> através de
                     linhas de <span className="text-[#4B4553]">código{""}</span>
@@ -30,14 +39,14 @@ export default function Home() {
                     <span className="text-[#FE552A]">criatividade</span>.
                     Perfeito para conversar sobre músicas, livros e boas
                     tipografias.
-                </p> */}
+                </p>
                 <p className={` `}>
                     Olá...
                 </p>
-            </div>
+            </div> */}
 
             <div className="col-span-full flex flex-col gap-4">
-                <h1 className={`gelica mb-6 text-center text-2xl font-bold`}>
+                <h1 className={`gelica  text-2xl font-bold`}>
                     alguns projetos
                 </h1>
 
